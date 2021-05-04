@@ -9,6 +9,11 @@
       <%= form.label :password%>
       <%= form.password_field :password, class: 'form-control'%>
       <%= form.submit 'Log in', class: 'btn btn-primary'%>
+      <p> </p>
+      <%= form.label :remember_me, class: 'checkbox inline' do %>
+        <%= form.check_box :remember_me, class: 'checkbox inline'%>
+        <span> Remember me on this computer </span>
+      <% end %>
     <% end %>
     <p> New user? <%= link_to 'Sign up now!', signup_path%> </p>
   </div>
